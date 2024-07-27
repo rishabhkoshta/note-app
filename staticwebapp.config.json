@@ -18,4 +18,4 @@
         "allowed": ["*.html", "*.js", "*.css", "*.json"]
       }
     ]
-  }git commit -m "Update routing configuration for Azure Static Web Apps"
+  }
