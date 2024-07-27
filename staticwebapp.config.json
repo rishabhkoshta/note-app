@@ -1,21 +1,6 @@
 {
-    "routes": [
-      {
-        "route": "/api/<*path>",
-        "serve": "/api/<*path>"
-      },
-      {
-        "route": "/static/<*path>",
-        "serve": "/static/<*path>"
-      },
-      {
-        "route": "/",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/<*path>",
-        "serve": "/index.html",
-        "allowed": ["*.html", "*.js", "*.css", "*.json"]
-      }
-    ]
+    "navigationFallback": {
+      "rewrite": "/index.html",
+      "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+    }
   }
