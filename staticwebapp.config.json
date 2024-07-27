@@ -6,7 +6,8 @@
       },
       {
         "route": "/<*path>",
-        "serve": "/index.html"
+        "serve": "/index.html",
+        "allowed": ["*.html", "*.js", "*.css", "*.json"]
       }
     ]
   }
