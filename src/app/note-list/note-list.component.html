@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <h2></h2>
+    <button class="btn btn-primary mb-3" routerLink="/edit/new">Create Note</button>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Content</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let note of notes">
+          <td>{{ note.title }}</td>
+          <td>{{ note.content }}</td>
+          <td class="d-flex align-items-center">
+            <button class="btn btn-warning mr-2" [routerLink]="['/edit', note.id]">Edit</button> &nbsp;
+            <button class="btn btn-danger" (click)="deleteNote(note.id)">Delete</button> 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
