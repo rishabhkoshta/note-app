@@ -2,12 +2,13 @@ import { Component, input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { NoteService } from '../note.service';
 import { FormsModule, NgForm } from '@angular/forms';
+import { NgIf } from '@angular/common';
 
 
 @Component({
   selector: 'app-note-edit',
   standalone: true,
-  imports: [FormsModule,RouterModule],
+  imports: [FormsModule,RouterModule,NgIf],
   templateUrl: './note-edit.component.html',
   styleUrl: './note-edit.component.css'
 })
